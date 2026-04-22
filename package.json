@@ -1,0 +1,57 @@
+{
+  "name": "dockerhub-api-client",
+  "version": "0.0.0",
+  "type": "module",
+  "description": "TypeScript client for the Docker Hub REST API",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "docs": "typedoc",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "test:client": "npm run build && node test-client/test.js"
+  },
+  "keywords": [
+    "docker",
+    "dockerhub",
+    "docker-hub",
+    "registry",
+    "api-client",
+    "rest",
+    "typescript"
+  ],
+  "license": "MIT",
+  "author": "pilmee (pilmee@gmail.com)",
+  "homepage": "https://eljijuna.github.io/dockerhub-api-client",
+  "bugs": {
+    "url": "https://github.com/ElJijuna/dockerhub-api-client/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ElJijuna/dockerhub-api-client.git"
+  },
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0",
+    "semantic-release": "^24.2.3",
+    "ts-jest": "^29.3.0",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.4.0",
+    "typedoc": "^0.27.9",
+    "typescript": "^5.8.3"
+  }
+}

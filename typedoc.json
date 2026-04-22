@@ -1,0 +1,13 @@
+{
+  "entryPoints": ["src/index.ts"],
+  "out": "docs",
+  "name": "Docker Hub API Client",
+  "readme": "none",
+  "excludeInternal": true,
+  "excludePrivate": true,
+  "excludeProtected": true,
+  "navigationLinks": {
+    "GitHub": "https://github.com/ElJijuna/dockerhub-api-client",
+    "npm": "https://www.npmjs.com/package/dockerhub-api-client"
+  }
+}
