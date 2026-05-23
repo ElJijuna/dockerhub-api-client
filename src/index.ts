@@ -1,1 +1,11 @@
-export {};
+export { DockerHubClient } from './DockerHubClient';
+export { DockerHubApiError } from './errors/DockerHubApiError';
+export type { DockerHubClientOptions, RequestEvent, DockerHubClientEvents } from './DockerHubClient';
+export { RepositoryResource } from './resources/RepositoryResource';
+export { UserResource } from './resources/UserResource';
+export type { DockerHubRepository, DockerHubRepositoryPermissions, DockerHubRepositoriesParams } from './domain/Repository';
+export type { DockerHubTag, DockerHubImageDetail, DockerHubTagsParams } from './domain/Tag';
+export type { DockerHubUser } from './domain/User';
+export type { DockerHubOrganization } from './domain/Organization';
+export type { DockerHubSearchResult, DockerHubSearchParams } from './domain/Search';
+export type { DockerHubPagedResponse, DockerHubPaginatedResponse } from './domain/Pagination';
